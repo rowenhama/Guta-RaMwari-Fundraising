@@ -40,4 +40,4 @@ This project is aimed at creating an agile and effective fundraising platform fo
 
 ## 🎉 Thanks for Joining
 
-Thank you for being a part of this project! Together, we can make a significant impact." > README.md
+Thank you for being a part of this project! Together, we can make a significant impact."
