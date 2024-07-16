@@ -1,4 +1,4 @@
-echo "# Guta RaMwari - International Fundraising
+## Guta RaMwari - International Fundraising
 
 Welcome to the collaborative codebase for Guta RaMwari - International Fundraising! We are excited to have you join us in building this project.
 
@@ -40,4 +40,4 @@ This project is aimed at creating an agile and effective fundraising platform fo
 
 ## 🎉 Thanks for Joining
 
-Thank you for being a part of this project! Together, we can make a significant impact."
+Thank you for being a part of this project! Together, we can make a significant impact.
