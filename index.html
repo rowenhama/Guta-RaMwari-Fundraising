@@ -565,17 +565,18 @@
 
     </section><!-- /Gallery Section -->
 
-    <!-- Sponsors Section -->
-    <section id="sponsors" class="sponsors section light-background">
+    
+<section id="sponsors" class="sponsors section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Guta RaMwari Religion Branches</h2>
-        <p>Below Are the branches where GRM can be found</p>
-        <p>Click on any branch for more information</p>
-      </div><!-- End Section Title -->
-      <style>
-        .client-logo {
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+      <h2>Guta RaMwari Religion Branches</h2>
+      <p>Below Are the branches where GRM can be found</p>
+      <p>Click on any branch for more information</p>
+  </div><!-- End Section Title -->
+
+  <style>
+      .client-logo {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -584,13 +585,13 @@
           margin: 10px;
           text-align: center;
           cursor: pointer;
-        }
+      }
 
-        .client-logo h3 {
+      .client-logo h3 {
           margin: 0;
-        }
+      }
 
-        .modal {
+      .modal {
           display: none;
           position: fixed;
           z-index: 1;
@@ -602,106 +603,168 @@
           background-color: rgb(0, 0, 0);
           background-color: rgba(0, 0, 0, 0.4);
           padding-top: 60px;
-        }
+      }
 
-        .modal-content {
+      .modal-content {
           background-color: #fefefe;
           margin: 5% auto;
           padding: 20px;
           border: 1px solid #888;
           width: 80%;
-        }
+      }
 
-        .close {
+      .close {
           color: #aaa;
           float: right;
           font-size: 28px;
           font-weight: bold;
-        }
+      }
 
-        .close:hover,
-        .close:focus {
+      .close:hover,
+      .close:focus {
           color: black;
           text-decoration: none;
           cursor: pointer;
-        }
-      </style>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      }
 
-        <div class="row g-0 clients-wrap">
+      #branchInfo {
+          white-space: pre-line;
+      }
+  </style>
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Mutare Branch')">
-            <h3>Mutare Branch</h3>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="d-flex justify-content-center flex-wrap text-center">
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Mutare Branch')">
+              <h3>Mutare Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Harare Branch')">
-            <h3>Harare Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Harare Branch')">
+              <h3>Harare Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Bulawayo Branch')">
-            <h3>Bulawayo Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Bulawayo Branch')">
+              <h3>Bulawayo Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Europe Branch')">
-            <h3>Europe Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Europe Branch')">
+              <h3>Europe Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('SA Branch')">
-            <h3>SA Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('SA Branch')">
+              <h3>SA Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Mozambique Branch')">
-            <h3>Mozambique Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Mozambique Branch')">
+              <h3>Mozambique Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Masvingo Branch')">
-            <h3>Masvingo Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Masvingo Branch')">
+              <h3>Masvingo Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Kwekwe Branch')">
-            <h3>Kwekwe Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Kwekwe Branch')">
+              <h3>Kwekwe Branch</h3>
           </div><!-- End Client Item -->
 
-          <div class="col-xl-3 col-md-4 client-logo" onclick="showModal('Murehwa Branch')">
-            <h3>Murehwa Branch</h3>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Murehwa Branch')">
+              <h3>Murehwa Branch</h3>
           </div><!-- End Client Item -->
 
-        </div>
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Botswana Sub HQ')">
+              <h3>Botswana Sub HQ</h3>
+          </div><!-- End Client Item -->
 
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Bostwana Second Branch')">
+              <h3>Bostwana Second Branch</h3>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Bostwana Third Branch')">
+              <h3>Bostwana Third Branch</h3>
+          </div><!-- End Client Item -->
       </div>
+  </div>
 
-      <!-- The Modal -->
-      <div id="branchModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
+  <!-- The Modal -->
+  <div id="branchModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
           <h2 id="branchTitle"></h2>
           <p id="branchInfo"></p>
-        </div>
-
       </div>
+  </div>
 
-      <script>
-        function showModal(branch) {
-          document.getElementById('branchTitle').innerText = branch;
-          document.getElementById('branchInfo').innerText = 'More information about ' + branch;
-          document.getElementById('branchModal').style.display = "block";
-        }
-
-        function closeModal() {
-          document.getElementById('branchModal').style.display = "none";
-        }
-
-        window.onclick = function (event) {
-          if (event.target == document.getElementById('branchModal')) {
-            closeModal();
+  <script>
+      const branchDetails = {
+          'Mutare Branch': {
+              address: '1225 Jopseph Shasha Close, World Banl Street, Chikanga 1, Mutare',
+              phone: '123-456-7890'
+          },
+          'Harare Branch': {
+              address: 'Sub Headquarters Stand No 8583 Glen-Norah B, Harare',
+              phone: '123-456-7891'
+          },
+          'Bulawayo Branch': {
+              address: 'Guta RaMwari Headquarters Stand No 56008 Old Lebengula, Bulawayo',
+              phone: '123-456-7892'
+          },
+          'Botswana Sub HQ': {
+              address: 'Francistown|Sub Headquarters Cnr Shashe & Thamalakane St Lot No. 1901, Area S, Botswana',
+              phone: '123-456-7893'
+          },
+          'Bostwana Second Branch': {
+              address: 'Gaborone Lot No. 17550, Taung Ward, Botswana',
+              phone: '123-456-7894'
+          },
+          'Bostwana Third Branch': {
+              address: 'Selibe Pikwe Lot No. 6275, South East Extension, Botswana',
+              phone: '123-456-7893'
+          },
+          'Europe Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
+          },
+          'SA Branch': {
+              address: 'Johannesburg|Sub Headquaters 4 Eastwood Street, Turfontein 2190, South Africa',
+              phone: '123-456-7893'
+          },
+          'Mozambique Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
+          },
+          'Masvingo Branch': {
+              address: '14222 Jongwe Street Chesvingo, Pangolin, Masvingo',
+              phone: '123-456-7894'
+          },
+          'Kwekwe Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
+          },
+          'Murehwa Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
           }
-        }
-      </script>
+      };
 
+      function showModal(branch) {
+          const details = branchDetails[branch];
+          document.getElementById('branchTitle').innerText = branch;
+          document.getElementById('branchInfo').innerText = `Address: ${details.address}\nPhone: ${details.phone}`;
+          document.getElementById('branchModal').style.display = "block";
+      }
 
-    </section><!-- /Sponsors Section -->
+      function closeModal() {
+          document.getElementById('branchModal').style.display = "none";
+      }
+
+      window.onclick = function(event) {
+          if (event.target == document.getElementById('branchModal')) {
+              closeModal();
+          }
+      }
+  </script>
+
+</section><!-- /Sponsors Section -->
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
