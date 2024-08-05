@@ -983,10 +983,15 @@ section,
 /*--------------------------------------------------------------
 # Uploaded Section
 --------------------------------------------------------------*/
+.col .country{
+  position: relative;
+  left: 100px;
+}
+
 #uploaded .country-names {
-  text-align: center;
   text-transform: uppercase;
   margin-top: 30px;
+  margin-left: 15px;
 }
 
 /*--------------------------------------------------------------
