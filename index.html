@@ -29,6 +29,31 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .video-thumbnail {
+      max-width: 300px;
+      /* Adjust the size of the image */
+      margin: 0 auto;
+      /* Center the image horizontally */
+      display: block;
+      /* Ensures block-level for centering */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* Smooth transition for hover effects */
+    }
+
+    .video-link:hover .video-thumbnail {
+      transform: scale(1.1);
+      /* Slightly enlarges the image on hover */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      /* Adds a shadow effect on hover */
+    }
+
+    .video-link:hover {
+      cursor: pointer;
+      /* Changes cursor to pointer to indicate it's clickable */
+    }
+  </style>
+
   <!-- =======================================================
   * Site Name: GRM Fundraising
   ======================================================== -->
@@ -137,7 +162,7 @@
     <section id="uploaded">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Global Heritage Day Videos <br></h2>
+        <h2>Global Heritage Day Participants Videos <br></h2>
         <p>Please click on the flags below to see the videos for the respective countries!</p>
 
       </div>
@@ -145,25 +170,28 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-3">
-            <a href="https://www.youtube.com/watch?v=w9h0-JuDs_Y" class="glightbox pulsating-play-btn mt-3" style="margin-left: 90px;">
-              <img src="./assets/img/Heritage Day Content/Flags/Pakistan.jpg" alt="Trulli" class="text-center" style="width:100%">
+            <a href="https://www.youtube.com/watch?v=w9h0-JuDs_Y" class="glightbox pulsating-play-btn mt-3"
+              style="margin-left: 90px;">
+              <img src="./assets/img/Heritage Day Content/Flags/Pakistan.jpg" alt="Trulli" class="text-center"
+                style="width:100%">
             </a>
-              <p class="country-names">Pakistan</p>
+            <p class="country-names">Pakistan</p>
           </div>
           <div class="col-md-3">
-            <a class="glightbox pulsating-play-btn mt-3" style="margin-left: 90px;">
+            <a class="glightbox pulsating-play-btn mt-3" href="https://youtu.be/dC-Gc6rzXT4" style="margin-left: 90px;">
               <img src="./assets/img/Heritage Day Content/Flags/Botswana.jpg" alt="Trulli" style="width:100%">
             </a>
-              <p class="country-names">Botswana</p>
+            <p class="country-names">Botswana</p>
           </div>
           <div class="col-md-3">
-            <a class="glightbox pulsating-play-btn mt-3" style="margin-left: 90px;">
+            <a class="glightbox pulsating-play-btn mt-3" href="https://youtu.be/Vf9PXw-jgQU" style="margin-left: 90px;">
               <img src="./assets/img/Heritage Day Content/Flags/Turkey.jpg" alt="Trulli" style="width:100%">
-            </a> 
-              <p class="country-names">Turkey</p>
+            </a>
+            <p class="country-names">Turkey</p>
           </div>
-          </div>
+
         </div>
+      </div>
       </div>
 
       <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -1064,683 +1092,728 @@
         </div>
 
       </div>
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery section">
 
-    </section><!-- /Progress Section -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Weekly Progress Report</h2>
+          <p>Our Weekly Progress Report shows all pictures of what is happening at the ground!</p>
+        </div><!-- End Section Title -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Weekly Progress Report</h2>
-        <p>Our Weekly Progress Report shows all pictures of what is happening at the ground!</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "centeredSlides": true,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 0
-                },
-                "768": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                },
-                "1200": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 20
-                }
-              }
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "centeredSlides": true,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 0
+            },
+            "768": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            },
+            "1200": {
+              "slidesPerView": 5,
+              "spaceBetween": 20
             }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_1.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_1.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_4.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_4.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_6.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_6.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_7.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_7.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_17.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_17.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_19.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_19.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_28.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_28.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_29.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_29.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_30.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_30.png" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_31.png"><img
-                  src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_31.png" class="img-fluid"
-                  alt=""></a></div>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-pagination"></div>
-      </div>
-
-      </div>
-
-    </section><!-- /Gallery Section -->
-
-
-    <section id="sponsors" class="sponsors section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Guta RaMwari Religion Branches</h2>
-        <p>Below Are the branches where GRM can be found</p>
-        <p>Click on any branch for more information</p>
-      </div><!-- End Section Title -->
-
-      <style>
-        .client-logo {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 150px;
-          border: 1px solid #000;
-          margin: 10px;
-          text-align: center;
-          cursor: pointer;
-        }
-
-        .client-logo h3 {
-          margin: 0;
-        }
-
-        .modal {
-          display: none;
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: rgb(0, 0, 0);
-          background-color: rgba(0, 0, 0, 0.4);
-          padding-top: 60px;
-        }
-
-        .modal-content {
-          background-color: #fefefe;
-          margin: 5% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 80%;
-        }
-
-        .close {
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-          color: black;
-          text-decoration: none;
-          cursor: pointer;
-        }
-
-        #branchInfo {
-          white-space: pre-line;
-        }
-      </style>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="d-flex justify-content-center flex-wrap text-center">
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Bulawayo Branch')">
-            <h3>Bulawayo(HQ) Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Europe Branch')">
-            <h3>Europe Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Francistown Branch')">
-            <h3>Francistown Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Gaborone Branch')">
-            <h3>Gaborone Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Godlwayo Branch')">
-            <h3>Godlwayo Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Gwanda Branch')">
-            <h3>Gwanda Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Harare Branch')">
-            <h3>Harare Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('JHB Branch')">
-            <h3>JHB Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Kwekwe Branch')">
-            <h3>Kwekwe Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Masvingo Branch')">
-            <h3>Masvingo Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Mozambique Branch')">
-            <h3>Mozambique Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Murehwa Branch')">
-            <h3>Murehwa Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Mutare Branch')">
-            <h3>Mutare Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Bostwana Third Branch')">
-            <h3>Selibe Branch</h3>
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Serowe Branch')">
-            <h3>Serowe Branch</h3>
-          </div><!-- End Client Item -->
-        </div>
-      </div>
-
-      <!-- The Modal -->
-      <div id="branchModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <h2 id="branchTitle"></h2>
-          <p id="branchInfo"></p>
-        </div>
-      </div>
-
-      <script>
-        const branchDetails = {
-          'Mutare Branch': {
-            address: '1225 Jopseph Shasha Close, World Banl Street, Chikanga 1, Mutare',
-            phone: '123-456-7890'
-          },
-          'Harare Branch': {
-            address: 'Sub Headquarters Stand No 8583 Glen-Norah B, Harare',
-            phone: '123-456-7891'
-          },
-          'Bulawayo Branch': {
-            address: 'Guta RaMwari Headquarters Stand No 56008 Old Lebengula, Bulawayo',
-            phone: '123-456-7892'
-          },
-          'Francistown Branch': {
-            address: 'Francistown|Sub Headquarters Cnr Shashe & Thamalakane St Lot No. 1901, Area S, Botswana',
-            phone: '123-456-7893'
-          },
-          'Gaborone Branch': {
-            address: 'Gaborone Lot No. 17550, Taung Ward, Botswana',
-            phone: '123-456-7894'
-          },
-          'Godlwayo Branch': {
-            address: 'Godlwayo Sub HQ P Bag 5832 Avoca.  Filabusi',
-            phone: '123-456-7894'
-          },
-          'Gwanda Branch': {
-            address: 'Stand number 9061 Ultra High, Gwanda',
-            phone: '123-456-7894'
-          },
-          'Bostwana Third Branch': {
-            address: 'Selibe Pikwe Lot No. 6275, South East Extension, Botswana',
-            phone: '123-456-7893'
-          },
-          'Europe Branch': {
-            address: 'Currently no address available',
-            phone: 'Currently no phone number available'
-          },
-          'JHB Branch': {
-            address: 'Johannesburg|Sub Headquaters 4 Eastwood Street, Turfontein 2190, South Africa',
-            phone: '123-456-7893'
-          },
-          'Mozambique Branch': {
-            address: 'Currently no address available',
-            phone: 'Currently no phone number available'
-          },
-          'Masvingo Branch': {
-            address: '14222 Jongwe Street Chesvingo, Pangolin, Masvingo',
-            phone: '123-456-7894'
-          },
-          'Kwekwe Branch': {
-            address: 'Currently no address available',
-            phone: 'Currently no phone number available'
-          },
-          'Murehwa Branch': {
-            address: 'Currently no address available',
-            phone: 'Currently no phone number available'
-          },
-          'Serowe Branch': {
-            address: 'Guta ra mwari Serowe branch, Botalaote Ward.',
-            phone: '123-456-7893'
-          }
-        };
-
-        function showModal(branch) {
-          const details = branchDetails[branch];
-          document.getElementById('branchTitle').innerText = branch;
-          document.getElementById('branchInfo').innerText = `Address: ${details.address}\nPhone: ${details.phone}`;
-          document.getElementById('branchModal').style.display = "block";
-        }
-
-        function closeModal() {
-          document.getElementById('branchModal').style.display = "none";
-        }
-
-        window.onclick = function (event) {
-          if (event.target == document.getElementById('branchModal')) {
-            closeModal();
           }
         }
       </script>
+            <div class="swiper-wrapper align-items-center">
+              <!-- Image Slides -->
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_1.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_1.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_4.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_4.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_6.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_6.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_7.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_7.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_17.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_17.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_19.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_19.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_28.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_28.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_29.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_29.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_30.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_30.png" class="img-fluid"
+                    alt=""></a></div>
+              <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                  href="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_31.png"><img
+                    src="assets/img/24 Weekly Progress Report - 27July2024/canopy_wk24_31.png" class="img-fluid"
+                    alt=""></a></div>
+            </div>
+          </div>
 
-    </section><!-- /Address Section -->
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
 
+      </section><!-- /Gallery Section -->
 
-    <!-- Speakers Section -->
-    <section id="aboutus" class="speakers section">
+      <!-- Video Section -->
+      <!-- Video Section -->
+      <!-- Video Section -->
+      <section id="video" class="video section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Us<br></h2>
-      </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Watch Our Progress Video</h2>
+          <p>Check out the video to see more of our progress in action!</p>
+        </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center gy-4">
-          <div class="col-xl-6 col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/hero-bg.jpg" class="img-fluid member-image" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <span>Guta Ra Mwari International Fundraising drives all GRM fundraising initiatives, furthering the
-                    Holy Work globally.</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": 1,
+          "centeredSlides": true,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+            <div class="swiper-wrapper align-items-center">
+              <!-- Video Slide -->
+              <div class="swiper-slide">
+                <a class="glightbox video-link" data-gallery="video-gallery"
+                  href="https://youtu.be/umRXZsIEiXc?si=YWlhjQ4npJv10i8J">
+                  <img src="./assets/img/playvideo.png" class="img-fluid video-thumbnail" alt="">
+                </a>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
-          <div class="col-xl-6 col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/event-gallery/newevent/hq.jpg" class="img-fluid member-image" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4><a href="https://gutaramwari.com/">For more information about Guta Ra Mwari
-                      Religion click here</a></h4>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+
+      </section><!-- /Video Section -->
+
+
+
+
+      <section id="sponsors" class="sponsors section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Guta RaMwari Religion Branches</h2>
+          <p>Below Are the branches where GRM can be found</p>
+          <p>Click on any branch for more information</p>
+        </div><!-- End Section Title -->
+
+        <style>
+          .client-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            border: 1px solid #000;
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+          }
+
+          .client-logo h3 {
+            margin: 0;
+          }
+
+          .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+          }
+
+          .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+          }
+
+          .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+
+          .close:hover,
+          .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          #branchInfo {
+            white-space: pre-line;
+          }
+        </style>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex justify-content-center flex-wrap text-center">
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Bulawayo Branch')">
+              <h3>Bulawayo(HQ) Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Europe Branch')">
+              <h3>Europe Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Francistown Branch')">
+              <h3>Francistown Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Gaborone Branch')">
+              <h3>Gaborone Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Godlwayo Branch')">
+              <h3>Godlwayo Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Gwanda Branch')">
+              <h3>Gwanda Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Harare Branch')">
+              <h3>Harare Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('JHB Branch')">
+              <h3>JHB Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Kwekwe Branch')">
+              <h3>Kwekwe Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Masvingo Branch')">
+              <h3>Masvingo Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Mozambique Branch')">
+              <h3>Mozambique Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Murehwa Branch')">
+              <h3>Murehwa Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Mutare Branch')">
+              <h3>Mutare Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Bostwana Third Branch')">
+              <h3>Selibe Branch</h3>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-3 col-md-4 col-sm-6 client-logo" onclick="showModal('Serowe Branch')">
+              <h3>Serowe Branch</h3>
+            </div><!-- End Client Item -->
+          </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="branchModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="branchTitle"></h2>
+            <p id="branchInfo"></p>
+          </div>
+        </div>
+
+        <script>
+          const branchDetails = {
+            'Mutare Branch': {
+              address: '1225 Jopseph Shasha Close, World Banl Street, Chikanga 1, Mutare',
+              phone: '123-456-7890'
+            },
+            'Harare Branch': {
+              address: 'Sub Headquarters Stand No 8583 Glen-Norah B, Harare',
+              phone: '123-456-7891'
+            },
+            'Bulawayo Branch': {
+              address: 'Guta RaMwari Headquarters Stand No 56008 Old Lebengula, Bulawayo',
+              phone: '123-456-7892'
+            },
+            'Francistown Branch': {
+              address: 'Francistown|Sub Headquarters Cnr Shashe & Thamalakane St Lot No. 1901, Area S, Botswana',
+              phone: '123-456-7893'
+            },
+            'Gaborone Branch': {
+              address: 'Gaborone Lot No. 17550, Taung Ward, Botswana',
+              phone: '123-456-7894'
+            },
+            'Godlwayo Branch': {
+              address: 'Godlwayo Sub HQ P Bag 5832 Avoca.  Filabusi',
+              phone: '123-456-7894'
+            },
+            'Gwanda Branch': {
+              address: 'Stand number 9061 Ultra High, Gwanda',
+              phone: '123-456-7894'
+            },
+            'Bostwana Third Branch': {
+              address: 'Selibe Pikwe Lot No. 6275, South East Extension, Botswana',
+              phone: '123-456-7893'
+            },
+            'Europe Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
+            },
+            'JHB Branch': {
+              address: 'Johannesburg|Sub Headquaters 4 Eastwood Street, Turfontein 2190, South Africa',
+              phone: '123-456-7893'
+            },
+            'Mozambique Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
+            },
+            'Masvingo Branch': {
+              address: '14222 Jongwe Street Chesvingo, Pangolin, Masvingo',
+              phone: '123-456-7894'
+            },
+            'Kwekwe Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
+            },
+            'Murehwa Branch': {
+              address: 'Currently no address available',
+              phone: 'Currently no phone number available'
+            },
+            'Serowe Branch': {
+              address: 'Guta ra mwari Serowe branch, Botalaote Ward.',
+              phone: '123-456-7893'
+            }
+          };
+
+          function showModal(branch) {
+            const details = branchDetails[branch];
+            document.getElementById('branchTitle').innerText = branch;
+            document.getElementById('branchInfo').innerText = `Address: ${details.address}\nPhone: ${details.phone}`;
+            document.getElementById('branchModal').style.display = "block";
+          }
+
+          function closeModal() {
+            document.getElementById('branchModal').style.display = "none";
+          }
+
+          window.onclick = function (event) {
+            if (event.target == document.getElementById('branchModal')) {
+              closeModal();
+            }
+          }
+        </script>
+
+      </section><!-- /Address Section -->
+
+
+      <!-- Speakers Section -->
+      <section id="aboutus" class="speakers section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About Us<br></h2>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center gy-4">
+            <div class="col-xl-6 col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <img src="assets/img/hero-bg.jpg" class="img-fluid member-image" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <span>Guta Ra Mwari International Fundraising drives all GRM fundraising initiatives, furthering the
+                      Holy Work globally.</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div><!-- End Team Member -->
-        </div><!-- End Row -->
-      </div><!-- End Container -->
-    </section><!-- /Speakers Section -->
+            </div><!-- End Team Member -->
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Frequently Asked Questions concerning the construction of Guta Ra Mwari Centenary Museum</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>How do i contribute?</h3>
-                <div class="faq-content">
-                  <p>Contributions are done either with supplying of building materials/tools, financial assistance or
-                    donations.
-                  </p>
+            <div class="col-xl-6 col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <img src="assets/img/event-gallery/newevent/hq.jpg" class="img-fluid member-image" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4><a href="https://gutaramwari.com/">For more information about Guta Ra Mwari
+                        Religion click here</a></h4>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
+            </div><!-- End Team Member -->
+          </div><!-- End Row -->
+        </div><!-- End Container -->
+      </section><!-- /Speakers Section -->
 
-              <div class="faq-item">
-                <h3>What if I don't have the funds?</h3>
-                <div class="faq-content">
-                  <p>This is a great place to start, and also a great place to contribute. One can still do
-                    man power,cooks, cleaners etc
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+      <!-- Faq Section -->
+      <section id="faq" class="faq section">
 
-              <div class="faq-item">
-                <h3>Who is eligable to contribute?</h3>
-                <div class="faq-content">
-                  <p>Every child of God is eligible to contribute</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <p>Frequently Asked Questions concerning the construction of Guta Ra Mwari Centenary Museum</p>
+        </div><!-- End Section Title -->
 
-              <div class="faq-item">
-                <h3>How often should i give my contributions?</h3>
-                <div class="faq-content">
-                  <p>We are encouraged to contribute as much as we can so that we accomplish our goals</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+        <div class="container">
 
-              <div class="faq-item">
-                <h3>Am I allowed to visit the site at any point of time?</h3>
-                <div class="faq-content">
-                  <p>There are time slots for visiting. Please contact your branch Evangelist for more information</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+          <div class="row justify-content-center">
 
-              <div class="faq-item">
-                <h3>What is the main purpose of building this museum?</h3>
-                <div class="faq-content">
-                  <p>The main purpose is to show the exhibition of the good works that were done by God and the
-                    historical monuments of Guta RaMwari, just to mention a few.
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
 
-            </div>
+              <div class="faq-container">
 
-          </div><!-- End Faq Column-->
+                <div class="faq-item faq-active">
+                  <h3>How do i contribute?</h3>
+                  <div class="faq-content">
+                    <p>Contributions are done either with supplying of building materials/tools, financial assistance or
+                      donations.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-        </div>
+                <div class="faq-item">
+                  <h3>What if I don't have the funds?</h3>
+                  <div class="faq-content">
+                    <p>This is a great place to start, and also a great place to contribute. One can still do
+                      man power,cooks, cleaners etc
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-      </div>
+                <div class="faq-item">
+                  <h3>Who is eligable to contribute?</h3>
+                  <div class="faq-content">
+                    <p>Every child of God is eligible to contribute</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-    </section><!-- /Faq Section -->
+                <div class="faq-item">
+                  <h3>How often should i give my contributions?</h3>
+                  <div class="faq-content">
+                    <p>We are encouraged to contribute as much as we can so that we accomplish our goals</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-    <!-- Contribute Section -->
-    <section id="buy-tickets" class="buy-tickets section light-background">
+                <div class="faq-item">
+                  <h3>Am I allowed to visit the site at any point of time?</h3>
+                  <div class="faq-content">
+                    <p>There are time slots for visiting. Please contact your branch Evangelist for more information</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contribute<br></h2>
-        <p>Contact us to make a contribute towards the following</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h3>Building Materials</h3>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <ul>
-              <li><i class="bi bi-check"></i> <span>Vehicles</span></li>
-              <li><i class="bi bi-check"></i> <span>Building tools</span></li>
-              <li><i class="bi bi-check"></i> <span>Building materials</span></li>
-              <li class="na"><i class="bi bi-x"></i> <span>Tractor</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <div class="text-center"><a href="#" class="buy-btn">Add to cart</a></div>
-          </div>
-        </div><!-- End Pricing Item -->
-
-        <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h3>Financial and Fuel<br></h3>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <ul>
-              <li><i class="bi bi-check"></i> <span>Diesel/Petrol</span></li>
-              <li><i class="bi bi-check"></i> <strong>Cash</strong></li>
-              <li><i class="bi bi-check"></i> <span>Transfer/PayPal/Visa/Mastercard</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <div class="text-center"><a href="#" class="buy-btn">Add to cart</a></div>
-          </div>
-        </div><!-- End Pricing Item -->
-
-        <div class="row gy-4 pricing-item mt-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <h3>Labour<br></h3>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <ul>
-              <li><i class="bi bi-check"></i> <span>Volunteers</span></li>
-              <li><i class="bi bi-check"></i> <span>Man Power</span></li>
-              <li><i class="bi bi-check"></i> <span>Cooks</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center">
-            <div class="text-center"><a href="#" class="buy-btn">Add to cart</a></div>
-          </div>
-        </div><!-- End Pricing Item -->
-
-      </div>
-
-    </section><!-- /Buy Tickets Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Get in touch with our our main branch</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>Stand 56008 Old Lobengula Bulawayo Zimbabwe</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="300">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+2637700000000</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>ukfundraising.committee@gmail.com</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Harare</h3>
-              <p>Elder Chakanza
-              </p>
-              <phone>+263 77 380 9440</phone>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="300">
-              <i class="bi bi-geo-alt"></i>
-              <h3>South Africa</h3>
-              <p>YM Linda
-              </p>
-              <phone>+27 73 128 8827</phone>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="400">
-              <i class="bi bi-geo-alt"></i>
-              <h3>UK</h3>
-              <p>Elder Preston
-              </p>
-              <phone>+44 7810 311510</phone>
-            </div>
-          </div><!-- End Info Item -->
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Turkey</h3>
-              <p>YM Tshidiso
-              </p>
-              <phone>+90 552 811 7433</phone>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="300">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Canada</h3>
-              <p>Evangalist Nyathi
-              </p>
-              <phone>+1(613) 203 1475</phone>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-              data-aos-delay="400">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Mozambique</h3>
-              <p>Elder Preston
-              </p>
-              <phone>+44 7810 311510</phone>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <div class="row gy-4 mt-1">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d28.529226086050794!3d-20.171183080809282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sYour%20Location%20Name!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-              frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div><!-- End Google Maps -->
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="400">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
+                <div class="faq-item">
+                  <h3>What is the main purpose of building this museum?</h3>
+                  <div class="faq-content">
+                    <p>The main purpose is to show the exhibition of the good works that were done by God and the
+                      historical monuments of Guta RaMwari, just to mention a few.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+
+            </div><!-- End Faq Column-->
+
+          </div>
 
         </div>
 
-      </div>
+      </section><!-- /Faq Section -->
 
-    </section><!-- /Contact Section -->
+      <!-- Contribute Section -->
+      <section id="buy-tickets" class="buy-tickets section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contribute<br></h2>
+          <p>Contact us to make a contribute towards the following</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <h3>Building Materials</h3>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Vehicles</span></li>
+                <li><i class="bi bi-check"></i> <span>Building tools</span></li>
+                <li><i class="bi bi-check"></i> <span>Building materials</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Tractor</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="text-center"><a href="#" class="buy-btn">Add to cart</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <h3>Financial and Fuel<br></h3>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Diesel/Petrol</span></li>
+                <li><i class="bi bi-check"></i> <strong>Cash</strong></li>
+                <li><i class="bi bi-check"></i> <span>Transfer/PayPal/Visa/Mastercard</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="text-center"><a href="#" class="buy-btn">Add to cart</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="row gy-4 pricing-item mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <h3>Labour<br></h3>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Volunteers</span></li>
+                <li><i class="bi bi-check"></i> <span>Man Power</span></li>
+                <li><i class="bi bi-check"></i> <span>Cooks</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="text-center"><a href="#" class="buy-btn">Add to cart</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </section><!-- /Buy Tickets Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Get in touch with our our main branch</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <p>Stand 56008 Old Lobengula Bulawayo Zimbabwe</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="300">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <p>+2637700000000</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="400">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>ukfundraising.committee@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+          <div class="row gy-4">
+
+            <div class="col-lg-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Harare</h3>
+                <p>Elder Chakanza
+                </p>
+                <phone>+263 77 380 9440</phone>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="300">
+                <i class="bi bi-geo-alt"></i>
+                <h3>South Africa</h3>
+                <p>YM Linda
+                </p>
+                <phone>+27 73 128 8827</phone>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="400">
+                <i class="bi bi-geo-alt"></i>
+                <h3>UK</h3>
+                <p>Elder Preston
+                </p>
+                <phone>+44 7810 311510</phone>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+          <div class="row gy-4">
+
+            <div class="col-lg-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Turkey</h3>
+                <p>YM Tshidiso
+                </p>
+                <phone>+90 552 811 7433</phone>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="300">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Canada</h3>
+                <p>Evangalist Nyathi
+                </p>
+                <phone>+1(613) 203 1475</phone>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="400">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Mozambique</h3>
+                <p>Elder Preston
+                </p>
+                <phone>+44 7810 311510</phone>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="row gy-4 mt-1">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d28.529226086050794!3d-20.171183080809282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sYour%20Location%20Name!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!-- End Google Maps -->
+
+            <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                data-aos-delay="400">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+            </div><!-- End Contact Form -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Contact Section -->
 
   </main>
 
